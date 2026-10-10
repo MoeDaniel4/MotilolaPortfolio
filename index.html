@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Motilola · Product Designer</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+/* local overrides — see style.css */
+</style>
+</head>
+<body>
+
+<!-- ─── NAV ─── -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">Motilola<span>.<span>Porfolio</span></span></a>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <div class="theme-toggle-thumb">
+        <span class="icon-dark">🌙</span>
+        <span class="icon-light">☀️</span>
+      </div>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile nav drawer lives outside <nav> so backdrop-filter doesn't create a clipping stacking context -->
+<ul class="nav-links" id="navLinks">
+  <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+    <span></span><span></span>
+  </button>
+  <li><a href="#services">Services</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#experience">Experience</a></li>
+  <li><a href="#testimonial">Testimonial</a></li>
+  <li><a href="https://mail.google.com/mail/?view=cm&to=ayodelemotilola@gmail.com">Contact</a></li>
+  <li><a href="https://cal.com/ayodele-motilola-ngqepj/15min" class="nav-cta">Hire Me</a></li>
+</ul>
+
+<!-- ─── HERO ─── -->
+<div id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid">
+    <div class="hero-content reveal">
+      <div class="hero-badge">Available for new projects</div>
+      <h1 class="hero-title">
+        I'm Motilola,<br>
+        <span class="highlight">Product</span><br>
+        Designer
+      </h1>
+      <p class="hero-desc">
+        Specialized in UI/UX with a focus on creating exceptional digital experiences
+        that are fast, accessible, visually appealing, and responsive.
+      </p>
+      <div class="hero-actions">
+        <!-- Read CV (click opens CV) → hover flips to Hire Me -->
+        <a href="https://flowcv.com/resume/51d2efi6gwds" id="readCvBtn" class="btn-flip btn-primary" title="Download CV">
+          <div class="btn-flip-inner">
+            <span>Read CV</span>
+            <span>Hire Me ↗</span>
+          </div>
+        </a>
+        <a href="#experience" class="btn-outline">Work Experience</a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal" style="transition-delay:0.2s">
+      <div class="hero-card">
+        <div class="avatar-wrap">
+          <div class="avatar-glow"></div>
+          <div class="avatar-ring"></div>
+          <div class="avatar-ring2"></div>
+          <div class="avatar-orbit-dot"></div>
+          <div class="avatar-inner">
+            <img src="./images/image.png" alt="">
+          </div>
+        </div>
+        <h3>Motilola</h3>
+        <p>Product Designer · Lagos, Nigeria</p>
+        <div class="stat-grid">
+          <div class="stat-box">
+            <div class="num">2+</div>
+            <div class="lbl">Years Exp</div>
+          </div>
+          <div class="stat-box">
+            <div class="num">10+</div>
+            <div class="lbl">Projects</div>
+          </div>
+          <div class="stat-box">
+            <div class="num">3</div>
+            <div class="lbl">Companies</div>
+          </div>
+          <div class="stat-box">
+            <div class="num">100%</div>
+            <div class="lbl">Passion</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── SERVICES ─── -->
+<section id="services">
+  <div class="reveal">
+    <div class="section-label">Services</div>
+    <h2 class="section-title">What I Do Best</h2>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal" style="transition-delay:0.1s">
+      <div class="service-icon">🎨</div>
+      <h3>UI/UX Design</h3>
+      <p>Crafting intuitive interfaces grounded in user research and behaviour, from wireframes to pixel perfect prototypes.</p>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.2s">
+      <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe-europe-africa-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0m0 1a6.97 6.97 0 0 0-4.335 1.505l-.285.641a.847.847 0 0 0 1.48.816l.244-.368a.81.81 0 0 1 1.035-.275.81.81 0 0 0 .722 0l.262-.13a1 1 0 0 1 .775-.05l.984.34q.118.04.243.054c.784.093.855.377.694.801a.84.84 0 0 1-1.035.487l-.01-.003C8.273 4.663 7.747 4.5 6 4.5 4.8 4.5 3.5 5.62 3.5 7c0 3 1.935 1.89 3 3 1.146 1.194-1 4 2 4 1.75 0 3-3.5 3-4.5 0-.704 1.5-1 1-2.5-.097-.291-.396-.568-.642-.756-.173-.133-.206-.396-.051-.55a.334.334 0 0 1 .42-.043l1.085.724a.276.276 0 0 0 .348-.035c.15-.15.414-.083.488.117.16.428.445 1.046.847 1.354A7 7 0 0 0 8 1"/>
+</svg></div>
+      <h3>Website Design</h3>
+      <p>Designing modern, responsive websites that balance aesthetics with performance and conversion focused layouts.</p>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.3s">
+      <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+  <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+  <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+</svg></div>
+      <h3>App Design</h3>
+      <p>Building mobile first experiences across iOS and Android that feel native and delightful to use every day.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PROJECT SHOWCASE ─── -->
+<section id="showcase">
+  <div class="reveal">
+    <div class="section-label">Portfolio</div>
+    <h2 class="section-title">Featured Projects</h2>
+  </div>
+
+  <div class="project-marquee">
+    <div class="project-row">
+
+      <div class="project-card project-card--pc">
+  <div class="pc-mockup">
+    <div class="pc-screen-body">
+      <div class="pc-topbar">
+        <span class="pc-dot pc-dot--red"></span>
+        <span class="pc-dot pc-dot--yellow"></span>
+        <span class="pc-dot pc-dot--green"></span>
+        <div class="pc-url-bar"></div>
+      </div>
+      <div class="pc-screen">
+        <img src="./images/Frame 441.png" alt="Pharm Dashboard">
+      </div>
+    </div>
+    <div class="pc-hinge"></div>
+    <div class="pc-base">
+      <div class="pc-trackpad"></div>
+    </div>
+  </div>
+  <div class="project-info">
+    <h3>Pharm Dashboard (SaaS)</h3>
+    <a href="https://moedaniel4.github.io/PharmDashboard/" target="_blank"><p>Website App Design ↗</p></a>
+  </div>
+</div>
+
+<div class="project-card">
+  <div class="phone-mockup">
+    <div class="phone-frame">
+      <div class="phone-notch"></div>
+      <div class="phone-screen">
+        <img src="./images/Frame 442.png" alt="Fashion App">
+      </div>
+      <div class="phone-home-bar"></div>
+    </div>
+  </div>
+  <div class="project-info">
+    <h3>Fashion Website & App Design</h3>
+    <a href="https://maisonattire.netlify.app" target="_blank"><p>Mobile & Website App Design ↗</p></a>
+  </div>
+</div>
+
+<div class="project-card">
+  <div class="phone-mockup">
+    <div class="phone-frame">
+      <div class="phone-notch"></div>
+      <div class="phone-screen">
+        <img src="./images/Frame 443.png" alt="Photography Portfolio">
+      </div>
+      <div class="phone-home-bar"></div>
+    </div>
+  </div>
+  <div class="project-info">
+    <h3>Photography Portfolio</h3>
+    <a href="https://moedaniel4.github.io/moeflash/" target="_blank"><p>Mobile App Design ↗</p></a>
+  </div>
+</div>
+
+<div class="project-card">
+  <div class="phone-mockup">
+    <div class="phone-frame">
+      <div class="phone-notch"></div>
+      <div class="phone-screen">
+        <img src="./images/Frame 444.png" alt="Travel App">
+      </div>
+      <div class="phone-home-bar"></div>
+    </div>
+  </div>
+  <div class="project-info">
+    <h3>Travel App</h3>
+    <a href="https://moedaniel4.github.io/TRAVELO/" target="_blank"><p>Mobile App Design ↗</p></a>
+  </div>
+</div>
+
+      <!-- Duplicate for seamless looping -->
+<div class="project-card">
+  <div class="phone-mockup">
+    <div class="phone-frame">
+      <div class="phone-notch"></div>
+      <div class="phone-screen">
+        <img src="./images/Frame 442.png" alt="Fashion App">
+      </div>
+      <div class="phone-home-bar"></div>
+    </div>
+  </div>
+  <div class="project-info">
+    <h3>Fashion Website & App Design</h3>
+    <a href="https://maisonattire.netlify.app" target="_blank"><p>Mobile & Website App Design ↗</p></a>
+  </div>
+</div>
+
+<div class="project-card">
+  <div class="phone-mockup">
+    <div class="phone-frame">
+      <div class="phone-notch"></div>
+      <div class="phone-screen">
+        <img src="./images/Frame 444.png" alt="Travel App">
+      </div>
+      <div class="phone-home-bar"></div>
+    </div>
+  </div>
+  <div class="project-info">
+    <h3>Travel App</h3>
+    <a href="https://moedaniel4.github.io/TRAVELO/" target="_blank"><p>Mobile App Design ↗</p></a>
+  </div>
+</div>
+
+<div class="project-card project-card--pc">
+  <div class="pc-mockup">
+    <div class="pc-screen-body">
+      <div class="pc-topbar">
+        <span class="pc-dot pc-dot--red"></span>
+        <span class="pc-dot pc-dot--yellow"></span>
+        <span class="pc-dot pc-dot--green"></span>
+        <div class="pc-url-bar"></div>
+      </div>
+      <div class="pc-screen">
+        <img src="./images/Frame 441.png" alt="Pharm Dashboard">
+      </div>
+    </div>
+    <div class="pc-hinge"></div>
+    <div class="pc-base">
+      <div class="pc-trackpad"></div>
+    </div>
+  </div>
+  <div class="project-info">
+    <h3>Pharm Dashboard (SaaS)</h3>
+    <a href="https://moedaniel4.github.io/PharmDashboard/" target="_blank"><p>Website App Design ↗</p></a>
+  </div>
+</div>
+
+<div class="project-card">
+  <div class="phone-mockup">
+    <div class="phone-frame">
+      <div class="phone-notch"></div>
+      <div class="phone-screen">
+        <img src="./images/Frame 443.png" alt="Photography Portfolio">
+      </div>
+      <div class="phone-home-bar"></div>
+    </div>
+  </div>
+  <div class="project-info">
+    <h3>Photography Portfolio</h3>
+    <a href="https://moedaniel4.github.io/moeflash/" target="_blank"><p>Mobile App Design ↗</p></a>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── ABOUT ─── -->
+<section id="about">
+  <div class="about-text reveal">
+    <div class="section-label">About Me</div>
+    <h2 class="section-title">Designer.<br>Thinker.<br>Builder.</h2>
+    <p>
+      I'm a passionate designer who specializes in UI/UX. When I'm not designing,
+      you'll find me on the pitch playing football, gaming, or sharing a good meal
+      with friends.
+    </p>
+    <p>
+      I'm very much a progressive thinker and enjoy working on products end to end, from ideation all the way to development. User experience, pixel-perfect design,
+      and clear, readable, high-performance interfaces are my craft.
+    </p>
+    <div class="about-bits">
+      <span class="about-bit">🎓 B.Sc Computer Science</span>
+      <span class="about-bit">🔐 Aspiring Cybersecurity</span>
+      <span class="about-bit">📚 Avid Learner</span>
+      <span class="about-bit">⚽ Football Fan</span>
+    </div>
+  </div>
+
+  <div class="about-right reveal" style="transition-delay:0.2s">
+    <div class="tools-wrap">
+      <h3>Tools</h3>
+      <div class="tools-grid">
+        <span class="tool-tag">Figma</span>
+        <span class="tool-tag">Tailwind CSS</span>
+        <span class="tool-tag">CSS</span>
+        <span class="tool-tag">HTML</span>
+        <span class="tool-tag">Node.js</span>
+        <span class="tool-tag">Framer</span>
+        <span class="tool-tag">Canva</span>
+      </div>
+    </div>
+    <div class="skills-marquee-wrap">
+      <h3>Skills</h3>
+      <div class="marquee-track">
+        <!-- Row 1: slides left -->
+        <div class="marquee-row row1">
+          <span class="m-tag">Dashboard Design</span>
+          <span class="m-tag">Wireframing</span>
+          <span class="m-tag">App Design</span>
+          <span class="m-tag">UX Design</span>
+          <span class="m-tag">Website Design</span>
+          <span class="m-tag">User Research</span>
+          <span class="m-tag">Mobile Design</span>
+          <span class="m-tag">X Design</span>
+          <!-- duplicate for seamless loop -->
+          <span class="m-tag">Dashboard Design</span>
+          <span class="m-tag">Wireframing</span>
+          <span class="m-tag">App Design</span>
+          <span class="m-tag">UX Design</span>
+          <span class="m-tag">Website Design</span>
+          <span class="m-tag">User Research</span>
+          <span class="m-tag">Mobile Design</span>
+          <span class="m-tag">X Design</span>
+        </div>
+        <!-- Row 2: slides right -->
+        <div class="marquee-row row2">
+          <span class="m-tag">Prototyping</span>
+          <span class="m-tag">Design Systems</span>
+          <span class="m-tag">Interaction Design</span>
+          <span class="m-tag">Accessibility</span>
+          <span class="m-tag">Responsive Design</span>
+          <span class="m-tag">Visual Design</span>
+          <span class="m-tag">Information Architecture</span>
+          <span class="m-tag">Usability Testing</span>
+          <!-- duplicate -->
+          <span class="m-tag">Prototyping</span>
+          <span class="m-tag">Design Systems</span>
+          <span class="m-tag">Interaction Design</span>
+          <span class="m-tag">Accessibility</span>
+          <span class="m-tag">Responsive Design</span>
+          <span class="m-tag">Visual Design</span>
+          <span class="m-tag">Information Architecture</span>
+          <span class="m-tag">Usability Testing</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── EXPERIENCE ─── -->
+<section id="experience">
+  <div class="reveal">
+    <div class="section-label">Work Experience</div>
+    <h2 class="section-title">Where I've<br>Made an Impact</h2>
+  </div>
+  <div class="exp-list">
+    <div class="exp-card reveal" style="transition-delay:0.1s">
+      <div>
+        <div class="exp-company">Cinetstox, Mumbai</div>
+        <div class="exp-role">UI/UX Designer · Internship</div>
+        <div class="exp-desc">As a UI/UX design intern in a data company, I worked alongside experienced designers and collaborated with cross functional teams to create intuitive and visually appealing user interfaces for data-driven products.</div>
+      </div>
+      <div class="exp-date">Feb – Apr 2025</div>
+    </div>
+    <div class="exp-card reveal" style="transition-delay:0.2s">
+      <div>
+        <div class="exp-company">Covalence</div>
+        <div class="exp-role">Web Designer · Contract</div>
+        <div class="exp-desc">As a product designer I worked as a contract designer to help design their website so it could convert more clients, ensuring accessibility, consistency, and user satisfaction throughout.</div>
+      </div>
+      <div class="exp-date">Aug – Dec 2025</div>
+    </div>
+    <div class="exp-card reveal" style="transition-delay:0.3s">
+      <div>
+        <div class="exp-company">Upwork</div>
+        <div class="exp-role">UI Designer · Freelance</div>
+        <div class="exp-desc">Working as a freelance product designer helping multiple clients design high converting websites with a focus on accessibility, visual consistency, and an exceptional user experience.</div>
+      </div>
+      <div class="exp-date">Feb 2026 – Present</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TESTIMONIAL ─── -->
+<section id="testimonial">
+  <div class="reveal">
+    <div class="section-label" style="justify-content:center">Testimonial</div>
+    <h2 class="section-title" style="text-align:center">What People Say</h2>
+  </div>
+  <div class="testimonial-list">
+    <div class="testimonial-card reveal" style="transition-delay:0.1s">
+      <p class="testimonial-text">
+        Job well done! I am really impressed. He is very very good at what he does, I would recommend him and will rehire in the future for frontend development.
+      </p>
+      <div class="testimonial-author">
+        <div class="author-avatar"><img src="./images/ChatGPT Image Jun 7, 2026, 08_37_54 PM.png" alt="Profile Image"></div>
+        <div class="author-info">
+          <div class="name">Adeshola Moronfolu</div>
+          <div class="role">Product Designer</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal" style="transition-delay:0.2s">
+      <p class="testimonial-text">
+        I particularly appreciated your reliability, technical expertise, and willingness to go the extra mile to ensure client satisfaction. The project was completed within the agreed timeline, and the final outcome reflected exceptional skill and dedication.
+      </p>
+      <div class="testimonial-author">
+        <div class="author-avatar">
+          <img src="./images/TIFE.jpeg" alt="Profile Image">
+        </div>
+        <div class="author-info">
+          <div class="name">Boluwatife</div>
+          <div class="role">UI Designer</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal" style="transition-delay:0.2s">
+      <p class="testimonial-text">
+        I had the pleasure of working with you, and I was highly impressed by the professionalism, creativity, and dedication demonstrated throughout the project.
+      </p>
+      <div class="testimonial-author">
+        <div class="author-avatar">
+          <img src="./images/DamiMyLola.png" alt="Profile Image">
+        </div>
+        <div class="author-info">
+          <div class="name">DamiMyLola</div>
+          <div class="role">UI/UX Designer</div>
+        </div>
+      </div>
+    </div>
+     <div class="testimonial-card reveal" style="transition-delay:0.2s">
+      <p class="testimonial-text">
+        The quality of the deliverables exceeded expectations, meeting both functional and aesthetic requirements while maintaining high standards of professionalism. Challenges were handled efficiently, and solutions were provided promptly whenever necessary.
+      </p>
+      <div class="testimonial-author">
+        <div class="author-avatar">
+          <img src="./images/5450.jpg" alt="Profile Image">
+        </div>
+        <div class="author-info">
+          <div class="name">Temilade Benson</div>
+          <div class="role">Backend Developer</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ─── CV MODAL ─── -->
+<div class="cv-modal-overlay" id="cvModal">
+  <div class="cv-modal">
+    <button class="cv-modal-close" id="cvModalClose">✕</button>
+    <div class="cv-modal-icon">📄</div>
+    <h2>Motilola's CV</h2>
+    <p>Download a copy of my CV or reach out directly to discuss opportunities and collaborations.</p>
+    <div class="cv-modal-actions">
+      <a href="https://flowcv.com/resume/51d2efi6gwds" class="cv-btn-download" download>⬇ Download CV</a>
+      <a href="https://mail.google.com/mail/?view=cm&to=ayodelemotilola@gmail.com" class="cv-btn-contact">✉ Contact Me</a>
+    </div>
+  </div>
+</div>
+<!-- ─── CONTACT LINKS ─── -->
+<section id="contact">
+  <div class="reveal">
+    <div class="section-label">Connect</div>
+    <h2 class="section-title">Let's Connect</h2>
+
+    <div class="social-links">
+      <a href="https://www.instagram.com/iammoedaniel/" target="_blank" class="social-link">
+        Instagram ↗
+      </a>
+
+      <a href="https://www.linkedin.com/in/motilola-olajubu-79b9b6209/" target="_blank" class="social-link">
+        LinkedIn ↗
+      </a>
+
+      <a href="https://x.com/MoeAyoO" target="_blank" class="social-link">
+        X (Twitter) ↗
+      </a>
+
+      <a href="https://www.behance.net/motiloladaniel" target="_blank" class="social-link">
+        Behance ↗
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="logo">Motilola<span>.<span>Portfolio</span></span></div>
+  <div class="footer-links">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="https://mail.google.com/mail/?view=cm&to=ayodelemotilola@gmail.com">Contact</a>
+  </div>
+  <div>© 2025 Designed by Motilola from figma. All rights reserved.</div>
+</footer>
+
+<script>
+  // ── Theme Toggle ──
+  const themeToggle = document.getElementById('themeToggle');
+  const html = document.documentElement;
+
+  // Restore saved preference
+  if (localStorage.getItem('theme') === 'light') html.classList.add('light');
+
+  themeToggle.addEventListener('click', () => {
+    html.classList.toggle('light');
+    localStorage.setItem('theme', html.classList.contains('light') ? 'light' : 'dark');
+  });
+
+  // ── CV Modal ──
+  const cvModal = document.getElementById('cvModal');
+  const readCvBtn = document.getElementById('readCvBtn');
+  const cvModalClose = document.getElementById('cvModalClose');
+
+  readCvBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    cvModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+  const closeModal = () => {
+    cvModal.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+  cvModalClose.addEventListener('click', closeModal);
+  cvModal.addEventListener('click', (e) => { if (e.target === cvModal) closeModal(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
+  // ── Fixed nav shrink on scroll ──
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  // ── Mobile hamburger ──
+  const hamburger = document.getElementById('hamburger');
+  const drawerClose = document.getElementById('drawerClose');
+  const navLinks = document.getElementById('navLinks');
+
+  const openNav = () => {
+    navLinks.classList.add('open');
+    hamburger.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  };
+  const closeNav = () => {
+    navLinks.classList.remove('open');
+    hamburger.classList.remove('active');
+    document.body.style.overflow = '';
+  };
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.contains('open') ? closeNav() : openNav();
+  });
+  drawerClose.addEventListener('click', closeNav);
+  // Close nav on link click
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', closeNav);
+  });
+
+  // ── Scroll reveal ──
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => observer.observe(el));
+
+  // ── Smooth active nav link highlight ──
+  const sections = document.querySelectorAll('section, #hero');
+  const links = document.querySelectorAll('.nav-links a:not(.nav-cta)');
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        // Only apply active highlight on desktop — mobile nav uses CSS color
+        if (window.innerWidth > 768) {
+          links.forEach(l => l.style.color = '');
+          const id = e.target.id || e.target.closest('[id]')?.id;
+          const active = document.querySelector(`.nav-links a[href="#${id}"]`);
+          if (active) active.style.color = 'var(--accent)';
+        }
+      }
+    });
+  }, { threshold: 0.4 });
+  sections.forEach(s => sectionObserver.observe(s));
+</script>
+</body>
+</html>
